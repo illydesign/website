@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>illydesign | Illy Dimitrova - Product Designer </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="section">
+            <div class="profile-card">
+                <div class="title-flex-special-mobile-wrap">
+                    <div class="title-flex-special-mobile">
+                        <h1 class="title">Hi, I'm</h1>
+                        <img src="/Users/iliyanadimitrova/Documents/portfolio/icons/illy.svg" alt="illy-logo"
+                            class="illy-logo">
+                    </div>
+                    <img class="profile-img"
+                        src="/Users/iliyanadimitrova/Documents/portfolio/illy-dimitrova-portfolio.jpg"
+                        alt="Profile picture" />
+                </div>
+                <div class="title-flex-special">
+                    <img class="profile-img"
+                        src="/Users/iliyanadimitrova/Documents/portfolio/illy-dimitrova-portfolio.jpg"
+                        alt="Profile picture" />
+                    <h1 class="title">Hi, I'm</h1>
+                    <img src="/Users/iliyanadimitrova/Downloads/illy.svg" alt="illy-logo" class="illy-logo">
+                </div>
+                <div class="flex-wrapper">
+                    <div class="flex-row-child-left">
+                        <img class="profile-img"
+                            src="/Users/iliyanadimitrova/Documents/portfolio/illy-dimitrova-portfolio.jpg"
+                            alt="Profile picture" />
+                        <div class="contact-info">
+                            <div class="icon-wrapper">
+                                <img class="icon"
+                                    src="/Users/iliyanadimitrova/Documents/portfolio/icons/email-icon-outline.svg"
+                                    alt="Email Icon">
+                                <a target="_blank" href="mailto:hi@illydesign.xyz" class="link">hi@illydesign.xyz</a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <img class="icon" src="/Users/iliyanadimitrova/Documents/portfolio/icons/x-icon.svg"
+                                    alt="Twitter Icon">
+                                <a target="_blank" href="https://twitter.com/illydimitrova"
+                                    class="link">@illydimitrova</a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <img class="icon"
+                                    src="/Users/iliyanadimitrova/Documents/portfolio/icons/dribble-icon.png"
+                                    alt="Dribbble Icon">
+                                <a target="_blank" href="https://dribbble.com/illydimitrova"
+                                    class="link">/illydimitrova</a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <img class="icon"
+                                    src="/Users/iliyanadimitrova/Documents/portfolio/icons/instagram-icon.png"
+                                    alt="Instagram Icon">
+                                <a target="_blank" href="https://www.instagram.com/illy_dimitrova/"
+                                    class="link">@illy_dimitrova</a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="flex-row-child-right">
+                        <div class="title-flex">
+                            <h1 class="title">Hi, I'm</h1>
+                            <img src="/Users/iliyanadimitrova/Documents/portfolio/icons/illy.svg" alt="illy-logo"
+                                class="illy-logo">
+
+                        </div>
+                        <p class="paragraph"> I'm a digital product designer based in London, UK. My mission is to
+                            design and build exceptional products for users and
+                            businesses. I've been working with SaaS companies since 2018. Along the way,
+                            I've designed for startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
+                            subscriptions and more.
+                        </p>
+
+                        <div class="button-container">
+
+                            <button class="button" onclick="location.href='mailto:hi@[yourdomain].xyz'">👋 Send a
+                                message</button>
+                            <button class="button"
+                                onclick="window.open('/Users/iliyanadimitrova/Documents/portfolio/files/Illy Dimitrova CV.pdf', '_blank')">See
+                                my
+                                resumé</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h1 class="h1">Recent Work</h1>
+                <h2 class="h2">Fintech Startup Krokit - Design </h2>
+
+                <div class="image-grid-one">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/hero-image-krokit.jpg" alt="krokit-hero"
+                        onclick="openModal('myModalKrokit');currentSlide('myModalKrokit', 1)"
+                        class="hover-shadow cursor">
+                </div>
+
+                <div id="myModalKrokit" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalKrokit')"><img class="functional-icon"
+                            src="icons/close-icon.svg"></span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/hero-image-krokit.jpg"
+                                alt="hero-image-krokit">
+                            <div class="slide-text">Krokit </div>
+                        </div>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/hero-image-krokit.jpg"
+                                onclick="currentSlide('myModalKrokit', 1)" alt="hero-image-krokit">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph"> Krokit is the financial data management platform for the franchise industry. I
+                        came in as a first designer, built two products and helped scale one of them to a five-figure
+                        monthly revenue in just two months.
+                    </p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>📖</span>
+                    <a target="_blank" href="https://www.krokit.com/" class="project-link">Read case study</a>
+                </div>
+            </div>
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">Design Sprints for Freddie's Flowers</h2>
+
+                <div class="image-grid-three">
+                    <img src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-design-team-illy-dimitrova.jpg"
+                        alt="Image 1" onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 1)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Downloads/freddies-flowers-figma-illy-dimitrova.jpg" alt="Image 2"
+                        onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 2)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/design-sprint-ideation-illy-dimitrova.jpg"
+                        alt="Image 3" onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 3)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-boxes-illy-dimitrova.jpg"
+                        alt="Image 4" onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 4)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-user-testing-illy-dimitrova.jpg"
+                        alt="Image 5" onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 5)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-design-sprint-team-illy-dimitrova.jpg"
+                        alt="Image 6" onclick="openModal('myModalFreddie');currentSlide('myModalFreddie', 6)"
+                        class="hover-shadow cursor">
+
+                    <!-- Add more images as needed -->
+                </div>
+
+                <div id="myModalFreddie" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalFreddie')"><img class="functional-icon"
+                            src="icons/close-icon.svg" /></a></span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-design-team-illy-dimitrova.jpg"
+                                alt="Freddie's Flowers Design Sprint team">
+                            <div class="slide-text">Freddie's Flowers Design Sprint team</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/freddies-flowers-figma-illy-dimitrova.jpg"
+                                alt="Freddie's Flowers Figma prototypes">
+                            <div class="slide-text">Freddie's Flowers Figma prototypes</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/design-sprint-ideation-illy-dimitrova.jpg"
+                                alt="Design sprint ideation">
+                            <div class="slide-text">Design sprint ideation</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-boxes-illy-dimitrova.jpg"
+                                alt="Freddie's Flowers packaging">
+                            <div class="slide-text">Freddie's Flowers packaging</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-user-testing-illy-dimitrova.jpg"
+                                alt="User testing">
+                            <div class="slide-text">User testing</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-design-sprint-team-illy-dimitrova.jpg"
+                                alt="Prototype presentations">
+                            <div class="slide-text">Prototype presentations</div>
+                        </div>
+
+
+
+                        <a class="prev" onclick="plusSlides('myModalFreddie', -1)"><img class="functional-icon"
+                                src="icons/chevron-left.svg" /></a>
+                        <a class="next" onclick="plusSlides('myModalFreddie', 1)"><img class="functional-icon"
+                                src="icons/chevron-right.svg" /></a>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-design-team-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 1)" alt="Freddie's Flowers Design Sprint team">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/freddies-flowers-figma-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 2)" alt="Freddie's Flowers Figma prototypes">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/design-sprint-ideation-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 3)" alt="Design sprint ideation">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-boxes-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 4)" alt="Freddie's Flowers packaging">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-flowers-user-testing-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 5)" alt="User testing">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Downloads/tinified%20(2)/freddies-design-sprint-team-illy-dimitrova.jpg"
+                                onclick="currentSlide('myModalFreddie', 6)" alt="Prototype presentations">
+
+
+                            <!-- Add your thumbnail images here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph"> I was part of two 5-day design sprints in 2022 and 2023 in London organised by
+                        <a class="link" href="https://www.thecraftory.io/" target="_blank">The Craftory VC
+                            Fund</a> for Freddie's Flowers. During the first sprint I worked closely with Freddie's and
+                        The Craftory VC teams on
+                        designing dynamic
+                        prototypes for Freddie's new
+                        'Gifting' product which was released in Feb 2023. In the second sprint I collaborated with
+                        Freddie's
+                        branding and executive teams to generate dynamic prototypes for six product
+                        dimensions. All designs were tested with real
+                        users from various audience segments to establish the most viable solution.
+                    </p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>👀</span>
+                    <a target="_blank" href="https://www.freddiesflowers.com/"
+                        class="project-link">freddiesflowers.com</a>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">HappyDojo.io (Martial Arts App Concept)</h2>
+
+                <div class="image-grid-two">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-event-view.jpg" alt="Image 1"
+                        onclick="openModal('myModalHappyDojo');currentSlide('myModalHappyDojo', 1)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-payment-screen.jpg" alt="Image 2"
+                        onclick="openModal('myModalHappyDojo');currentSlide('myModalHappyDojo', 2)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-about-us.jpg" alt="Image 3"
+                        onclick="openModal('myModalHappyDojo');currentSlide('myModalHappyDojo', 3)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-chats.jpg" alt="Image 4"
+                        onclick="openModal('myModalHappyDojo');currentSlide('myModalHappyDojo', 4)"
+                        class="hover-shadow cursor">
+                </div>
+
+                <div id="myModalHappyDojo" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalHappyDojo')"><img class="functional-icon"
+                            src="icons/close-icon.svg"></span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-event-view.jpg"
+                                alt="Karate app event view">
+                            <div class="slide-text">Karate App Event View</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-payment-screen.jpg"
+                                alt="Freddie's Flowers Figma prototypes">
+                            <div class="slide-text">Karate App Payment Screen</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-about-us.jpg"
+                                alt="Design sprint ideation">
+                            <div class="slide-text">Karate App About Us</div>
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-chats.jpg"
+                                alt="Freddie's Flowers packaging">
+                            <div class="slide-text">Karate App Chats</div>
+                        </div>
+
+
+                        <a class="prev" onclick="plusSlides('myModalHappyDojo', -1)"><img class="functional-icon"
+                                src="icons/chevron-left.svg" /></a>
+                        <a class="next" onclick="plusSlides('myModalHappyDojo', 1)"><img class="functional-icon"
+                                src="icons/chevron-right.svg" /></a>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-event-view.jpg"
+                                onclick="currentSlide('myModalHappyDojo', 1)" alt="Karate App Event View">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-payment-screen.jpg"
+                                onclick="currentSlide('myModalHappyDojo', 2)" alt="Karate App Payment Screen">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-about-us.jpg"
+                                onclick="currentSlide('myModalHappyDojo', 3)" alt="Karate App About Us">
+                            <img class="thumbnail"
+                                src="/Users/iliyanadimitrova/Documents/portfolio/karate-app-chats.jpg"
+                                onclick="currentSlide('myModalHappyDojo', 4)" alt="Karate App Chats">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph"> Practising karate and observing areas for improvement in my
+                        club sparked the
+                        idea of designing a martial arts app concept. The app facilitates event updates,
+                        online payment,
+                        and communication among students. Additionally, it assists club owners (Sensei)
+                        in managing
+                        events, receiving online payments, communicating with students, and maintaining
+                        student records.
+                    </p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>💻</span>
+                    <a target="_blank"
+                        href="https://www.figma.com/file/Vp5aC93nJc3wp14JphsUNa/Karate-App---HappyDojo.io?type=design&node-id=0-1&mode=design&t=ixGEq2HPDdyVmUXM-0"
+                        class="project-link">Figma</a>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">Tourism Business Website - Design & Build</h2>
+
+
+                <div class="image-grid-three">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 1.png" alt="Cyclexperience Website 1"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 1)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 2.png" alt="Cyclexperience Website 1"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 2)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 3.png" alt="Cyclexperience Website 3"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 3)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 4.png" alt="Cyclexperience Website 4"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 4)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 5.png" alt="Cyclexperience Website 5"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 5)"
+                        class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 6.png" alt="Cyclexperience Website 6"
+                        onclick="openModal('myModalCyclex');currentSlide('myModalCyclex', 6)"
+                        class="hover-shadow cursor">
+                </div>
+
+                <div id="myModalCyclex" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalCyclex')"><img class="functional-icon"
+                            src="icons/close-icon.svg"></span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 1.png"
+                                alt="Cyclexperience Website 1">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 2.png"
+                                alt="Cyclexperience Website 2">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 3.png"
+                                alt="Cyclexperience Website 3">
+
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 4.png"
+                                alt="Cyclexperience Website 4">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 5.png"
+                                alt="Cyclexperience Website 5">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 6.png"
+                                alt="Cyclexperience Website 6">
+                        </div>
+
+
+                        <a class="prev" onclick="plusSlides('myModalCyclex', -1)"><img class="functional-icon"
+                                src="icons/chevron-left.svg" /></a>
+                        <a class="next" onclick="plusSlides('myModalCyclex', 1)"><img class="functional-icon"
+                                src="icons/chevron-right.svg" /></a>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 1.png"
+                                onclick="currentSlide('myModalCyclex', 1)" alt="Cyclexperience Website 1">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 2.png"
+                                onclick="currentSlide('myModalCyclex', 2)" alt="Cyclexperience Website 2">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 3.png"
+                                onclick="currentSlide('myModalCyclex', 3)" alt="Cyclexperience Website 3">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 4.png"
+                                onclick="currentSlide('myModalCyclex', 4)" alt="Cyclexperience Website 4">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 5.png"
+                                onclick="currentSlide('myModalCyclex', 5)" alt="Cyclexperience Website 5">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/Cyclex 6.png"
+                                onclick="currentSlide('myModalCyclex', 6)" alt="Cyclexperience Website 6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph"> I designed the site in Figma and built it in
+                        Webflow. I chose minimalistic and
+                        easy to navigate design for this project. I focused on featuring
+                        high-quality visuals of the
+                        area to help visitors imagine the experience and make them more
+                        comfortable booking online. The
+                        site is pretty big and required a lot of CMS collections and
+                        compiling the right assets for each
+                        section. Hotjar has shown that the scrollable photo galleries are
+                        very popular with most users
+                        looking at every photo.</p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>👀</span>
+                    <a target="_blank" href="https://www.cyclex.co.uk/" class="project-link">cyclex.co.uk</a>
+                </div>
+            </div>
+
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">Branding for Finance Advisory Business</h2>
+
+                <div class="image-grid-three">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 1.png" alt="Forward Food Tech 1"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 1)" class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 2.png" alt="Forward Food Tech 2"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 2)" class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 3.png" alt="Forward Food Tech 3"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 3)" class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 4.png" alt="Forward Food Tech 4"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 4)" class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 5.png" alt="Forward Food Tech 5"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 5)" class="hover-shadow cursor">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/FFT 6.png" alt="Forward Food Tech 6"
+                        onclick="openModal('myModalFFT');currentSlide('myModalFFT', 6)" class="hover-shadow cursor">
+
+
+                </div>
+
+                <div id="myModalFFT" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalFFT')"><img class="functional-icon"
+                            src="icons/close-icon.svg"></span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 1.png"
+                                alt="Forward Food Tech 1">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 2.png"
+                                alt="Forward Food Tech 2">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 3.png"
+                                alt="Forward Food Tech 3">
+
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 4.png"
+                                alt="Forward Food Tech 4">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 5.png"
+                                alt="Forward Food Tech 5">
+                        </div>
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 6.png"
+                                alt="Forward Food Tech 6">
+                        </div>
+
+
+                        <a class="prev" onclick="plusSlides('myModalFFT', -1)"><img class="functional-icon"
+                                src="icons/chevron-left.svg" /></a>
+                        <a class="next" onclick="plusSlides('myModalFFT', 1)"><img class="functional-icon"
+                                src="icons/chevron-right.svg" /></a>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 1.png"
+                                onclick="currentSlide('myModalFFT', 1)" alt="Forward Food Tech 1">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 2.png"
+                                onclick="currentSlide('myModalFFT', 2)" alt="Forward Food Tech 2">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 3.png"
+                                onclick="currentSlide('myModalFFT', 3)" alt="Forward Food Tech 3">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 4.png"
+                                onclick="currentSlide('myModalFFT', 4)" alt="Forward Food Tech 4">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 5.png"
+                                onclick="currentSlide('myModalFFT', 5)" alt="Forward Food Tech 5">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/FFT 6.png"
+                                onclick="currentSlide('myModalFFT', 6)" alt="Forward Food Tech 6">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph"> I planned and created the branding for
+                        an advisory business that works with
+                        food
+                        and agriculture tech start-ups. I designed all visuals
+                        and wireframes in Figma and built the
+                        site in
+                        Webflow. The new website increased sign-ups by 50%. I
+                        worked there as a Marketing Manager and
+                        found
+                        it quite fun producing two 5-star rated podcasts for
+                        them.</p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>👀</span>
+                    <a target="_blank" href="https://fft.webflow.io/" class="project-link">Webflow link</a>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">Food App Landing Page</h2>
+
+                <div class="image-grid-one">
+                    <img src="/Users/iliyanadimitrova/Documents/portfolio/yelow-dribbble.jpg" alt="Food app"
+                        onclick="openModal('myModalFoodApp');currentSlide('myModalFoodApp', 1)"
+                        class="hover-shadow cursor">
+
+                </div>
+
+                <div id="myModalFoodApp" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalFoodApp')"><img class="functional-icon"
+                            src="icons/close-icon.svg"></span>
+                    <div class="modal-content">
+                        <div class="mySlides">
+                            <img class="img-slides" src="/Users/iliyanadimitrova/Documents/portfolio/yelow-dribbble.jpg"
+                                alt="Food app">
+                        </div>
+
+
+                        <a class="prev" onclick="plusSlides('myModalFoodApp', -1)"><img class="functional-icon"
+                                src="icons/chevron-left.svg" /></a>
+                        <a class="next" onclick="plusSlides('myModalFoodApp', 1)"><img class="functional-icon"
+                                src="icons/chevron-right.svg" /></a>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="/Users/iliyanadimitrova/Documents/portfolio/yelow-dribbble.jpg"
+                                onclick="currentSlide('myModalFoodApp', 1)" alt="Food app">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph">Landing page design for a food app
+                        concept helping customers find the best meal
+                        for them based on their dietary requirements.</p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span>💻</span>
+                    <a target="_blank"
+                        href="https://www.figma.com/proto/znRd5rFC6CFJwzUX9955kQ/yelow-landing-page?node-id=1471-1098&scaling=min-zoom&page-id=1402%3A1041&starting-point-node-id=1471%3A1098"
+                        class="project-link">Figma</a>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h1 class="h1">Personal Inspiration</h1>
+                <h2 class="h2">A small selection of my favourites</h2>
+
+                <div class="image-grid">
+                    <a href="https://en.wikipedia.org/wiki/Steve_Jobs" target="_blank" class="image-container">
+                        <img src="/Users/iliyanadimitrova/Downloads/steve-jobs.jpg" alt="steve-jobs">
+                        <span class="image-description">Steve Jobs</span>
+                    </a>
+                    <a href="https://en.wikipedia.org/wiki/Jony_Ive" target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(4)/jony_ive.jpg" alt="jony-ive">
+                        <span class="image-description">Jony Ive</span>
+                    </a>
+                    <a href="https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584" target="_blank"
+                        class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(4)/mds-matt-d-smith.jpg"
+                            alt="mds-matt-d-smith">
+                        <span class="image-description">MDS (Matt D.
+                            Smith)</span>
+                    </a>
+                    <a href="" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(5)/illy-and-grandma-ginche.jpg"
+                            alt="illy-and-grandma-ginche.jpg">
+                        <span class="image-description">My Grandma</span>
+                    </a>
+                    <a href="https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584" target="_blank"
+                        class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(1)/seneca_letters_of_a_stoic.jpg"
+                            alt="seneca_letters_of_a_stoic">
+                        <span class="image-description">Seneca - Letters from a
+                            Stoic</span>
+                    </a>
+                    <a href="https://www.amazon.co.uk/Good-They-Cant-Ignore-You/dp/0349415862/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1657810198&sr=8-1"
+                        target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/so_good_they_cant_ignore_you.jpg"
+                            alt="so_good_they_cant_ignore_you">
+                        <span class="image-description">So Good They Can't
+                            Ignore You</span>
+                    </a>
+                    <a href="https://www.navalmanack.com/" target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(1)/almanack_naval_ravikant.jpg"
+                            alt="almanack_naval_ravikant">
+                        <span class="image-description">The Almanack of Naval
+                            Ravikant</span>
+                    </a>
+                    <a href="https://www.amazon.co.uk/How-Innovation-Works-Matt-Ridley/dp/0008334846/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1657810138&sr=1-1"
+                        target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/how_innovation_works.jpg"
+                            alt="how_innovation_works">
+                        <span class="image-description">How Innovation
+                            Works</span>
+                    </a>
+                    <a href="https://podcasts.apple.com/us/podcast/lex-fridman-podcast/id1434243584" target="_blank"
+                        class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(1)/lex_fridman_podcast.jpg"
+                            alt="lex_fridman_podcast">
+                        <span class="image-description">Lex Fridman
+                            Podcast</span>
+                    </a>
+                    <a href="https://podcasts.apple.com/gb/podcast/design-details/id947191070" target="_blank"
+                        class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(1)/design_details_podcast.jpg"
+                            alt="adriana_mora_electra">
+                        <span class="image-description">Design Details
+                            Podcast</span>
+                    </a>
+                    <a href="https://www.tesla.com/" target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(5)/cybertruck-rear.jpg"
+                            alt="cybertruck-rear">
+                        <span class="image-description">Tesla</span>
+                    </a>
+                    <a href="https://twitter.com/ADRNMA_" target="_blank" class="image-container">
+                        <img src="file:///Users/iliyanadimitrova/Downloads/tinified%20(1)/adriana_mora_electra.jpg"
+                            alt="adriana_mora_electra">
+                        <span class="image-description">Adriana Mora, 3D
+                            Designer</span>
+                    </a>
+                </div>
+
+            </div>
+            <hr class="hr">
+            <div class="get-in-touch-wrapper">
+                <div class="h2-24px-flex-wrapper">
+                    <h2 class="h2">Have a project that needs design?</h2>
+                    <p class="paragraph">I'm happy to help!</p>
+                </div>
+                <div class="button-container">
+                    <button class="button" onclick="location.href='mailto:hi@[yourdomain].xyz'">👋
+                        Send a message </button>
+                </div>
+            </div>
+    </header>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-icons">
+                <a href="mailto:hi@illydesign.xyz" target="_blank">
+                    <img src="file:///Users/iliyanadimitrova/Downloads/email-icon-inverted.svg"
+                        alt="email-icon-inverted" />
+                </a>
+                <a href="https://twitter.com/illydimitrova" target="_blank">
+                    <img src="file:///Users/iliyanadimitrova/Downloads/x-icon-inverted.svg" alt="x-icon-inverted" />
+                </a>
+                <a href="https://dribbble.com/illydimitrova" target="_blank">
+                    <img src="file:///Users/iliyanadimitrova/Downloads/dribble-icon-inverted.svg"
+                        alt="dribble-icon-inverted" />
+                </a>
+                <a href="https://www.instagram.com/illy_dimitrova/" target="_blank">
+                    <img src="file:///Users/iliyanadimitrova/Downloads/instagram-icon-inverted.svg"
+                        alt="instagram-icon-inverted" />
+                </a>
+            </div>
+            <p id="copyright">© illydesign.xyz</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Files -->
+
+    <script>
+
+        // Object to keep track of slide indices for each modal
+        var modalSlideIndexes = {};
+
+
+        // Open the modal
+        function openModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.style.display = "block";
+            // If there's no index for the modal, set it to 1
+            if (!modalSlideIndexes[modalId]) {
+                modalSlideIndexes[modalId] = 1;
+            }
+            showSlides(modalId, modalSlideIndexes[modalId]); // Show the first slide or the current slide
+        }
+
+        // Close the modal
+        function closeModal(modalId) {
+            var modal = document.getElementById(modalId);
+            modal.classList.add('ease-out'); // Add the fade-out animation class
+
+            setTimeout(function () {
+                modal.style.display = "none";
+                modal.classList.remove('ease-out'); // Remove the class to reset the animation
+            }, 200); // Match the timeout with the animation duration
+        }
+
+        // Navigate to the previous or next slide
+        function plusSlides(modalId, n) {
+            var slides = document.getElementById(modalId).getElementsByClassName("mySlides");
+            var totalSlides = slides.length;
+            var currentSlideIndex = modalSlideIndexes[modalId];
+            var newIndex = currentSlideIndex + n;
+
+            // Cycle through slides
+            if (newIndex > totalSlides) {
+                newIndex = 1;
+            } else if (newIndex < 1) {
+                newIndex = totalSlides;
+            }
+
+            modalSlideIndexes[modalId] = newIndex;
+            showSlides(modalId, newIndex);
+        }
+
+        // Show the current slide in a modal
+        function currentSlide(modalId, n) {
+            modalSlideIndexes[modalId] = n; // Update the index
+            showSlides(modalId, n);
+        }
+
+
+        // Show slides with a fade transition effect
+        function showSlides(modalId, n) {
+            var i;
+            var modal = document.getElementById(modalId);
+            var slides = modal.getElementsByClassName("mySlides");
+            var thumbnails = modal.getElementsByClassName("thumbnail");
+
+            if (n > slides.length) n = 1;
+            if (n < 1) n = slides.length;
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].className = thumbnails[i].className.replace(" active", "");
+                thumbnails[i].style.opacity = "0.6"; // Dim all thumbnails
+            }
+            slides[n - 1].style.display = "block";
+            slides[n - 1].style.animation = "fadeEffect 1s"; // Apply the fade effect
+            thumbnails[n - 1].className += " active"; // Add the active class
+            thumbnails[n - 1].style.opacity = "1"; // Highlight the active thumbnail
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function (event) {
+            var openModal = document.querySelector('.modal[style*="block"]');
+            if (openModal) {
+                var modalId = openModal.id;
+                if (event.key === "Escape") {
+                    closeModal(modalId);
+                } else if (event.key === "ArrowLeft") {
+                    plusSlides(modalId, -1);
+                } else if (event.key === "ArrowRight") {
+                    plusSlides(modalId, 1);
+                }
+            }
+        });
+
+
+
+    </script>
+
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('copyright').textContent = `© illydesign.xyz ${currentYear} | Handmade in HTML, CSS and Vanilla JS`;
+    </script>
+
+
+</body>
+
+</html>
