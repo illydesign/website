@@ -570,7 +570,7 @@ body {
 
 .link {
     color: black;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: underline;
     text-decoration-color: rgb(197, 197, 197);
 }
@@ -897,8 +897,7 @@ body {
     max-width: 82.3vw;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
     text-align: left;
     padding: 16px 24px;
     font-size: 16px;
@@ -1005,7 +1004,7 @@ footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 80px 0;
+    padding: 80px 24px;
     margin: 0px;
     position: relative;
     bottom: 0;
@@ -1017,6 +1016,8 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 .social-icons {
@@ -1027,7 +1028,7 @@ footer {
 .social-icons a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 6px;
     /* Space between icons */
     display: inline-block;
     /* Align icons in a row */
