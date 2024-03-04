@@ -1,19 +1,22 @@
 body {
+
     font-family: 'Roboto Mono', monospace;
     margin: 0px;
+    color: #333333;
 }
 
 .title {
     font-weight: 700;
     font-size: 72px;
     line-height: 50px;
-    color: black;
+    color: #000000;
     padding: 0;
     margin: 0;
 
 }
 
 .h1 {
+    color: #333333;
     font-size: 58px;
     line-height: 66px;
     font-weight: 700;
@@ -21,6 +24,7 @@ body {
 }
 
 .h2 {
+    color: #333333;
     font-size: 36px;
     line-height: 50px;
     font-weight: 700;
@@ -28,12 +32,14 @@ body {
 }
 
 .h3 {
+    color: #333333;
     font-size: 28px;
     line-height: 50px;
     font-weight: 700;
 }
 
 .paragraph {
+    color: #333333;
     font-size: 20px;
     line-height: 28px;
     margin: 0;
@@ -42,6 +48,14 @@ body {
 
 ::selection {
     background: magenta;
+}
+
+.icon-style {
+    color: #333333;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+
 }
 
 .profile-img {
@@ -105,6 +119,14 @@ body {
     }
 
 
+footer {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
 }
 
 .title-flex-special-mobile {
@@ -140,7 +162,7 @@ body {
 }
 
 
-@media screen and (man-width: 1012px) and (max-width:1056px) {
+@media screen and (min-width: 1012px) and (max-width:1056px) {
     .flex-row-child-right {
         max-width: 100%;
 
@@ -252,6 +274,15 @@ body {
         gap: 24px;
     }
 
+
+footer {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+}
+
 }
 
 @media (min-width: 767px) and (max-width: 860px) {
@@ -265,8 +296,8 @@ body {
 @media screen and (max-width: 767px) {
 
     .section {
-        padding-left: 24px;
-        padding-right: 24px;
+        padding-left: 16px;
+        padding-right: 16px;
 
     }
 
@@ -277,8 +308,8 @@ body {
     }
 
     .flex-row-child-right {
-        max-width: 90%;
-        width: 90%;
+        max-width: 100%;
+        width: 100%;
     }
 
 
@@ -336,6 +367,18 @@ body {
         font-size: 18px;
         width: 260px;
         height: 56px;
+    }
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer-content {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
 
@@ -401,6 +444,18 @@ body {
 
     .profile-img {
         min-width: 20vw;
+    }
+
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer-content {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
 }
@@ -486,10 +541,19 @@ body {
         gap: 12px;
     }
 
+    footer {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    .footer-content {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
 
 }
-
-
 
 .flex-link-wrapper {
     display: flex;
@@ -541,7 +605,7 @@ body {
 
 
 .title-flex-special-mobile {
-    grid-column-gap: 32px;
+    grid-column-gap: 24px;
     flex-direction: row;
     align-items: center;
     padding-bottom: 40px;
@@ -564,13 +628,14 @@ body {
     justify-content: flex-start;
     align-items: center;
     display: flex;
-    padding-bottom: 16px;
-    gap: 16px;
+    padding-bottom: 12px;
+    gap: 12px;
 }
 
 .link {
-    color: black;
+    color: #333333;
     font-size: 16px;
+    font-weight: bold;
     text-decoration: underline;
     text-decoration-color: rgb(197, 197, 197);
 }
@@ -581,9 +646,10 @@ body {
 }
 
 .project-link {
-    color: black;
+    color: #333333;
     background-repeat: no-repeat;
     text-decoration: underline;
+    font-weight: bold;
     text-decoration-color: rgb(197, 197, 197);
 }
 
@@ -599,7 +665,12 @@ body {
 
 .button {
     font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
     width: auto;
+    color: #333333;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: rgb(197, 197, 197);
     padding: 16px 32px;
     cursor: pointer;
     margin-right: 24px;
@@ -1001,11 +1072,11 @@ body {
 
 
 footer {
-    background-color: #333;
-    color: white;
+    max-width: 1100px;
+    margin: auto;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
     text-align: center;
-    padding: 80px 24px;
-    margin: 0px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -1016,11 +1087,13 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
-    padding: 0px;
 }
 
 .social-icons {
+    display: flex;
+    justify-content: center;
+    height: 28px;
+    width: 28px;
     margin-bottom: 24px;
     /* Space between icons and copyright text */
 }
@@ -1028,7 +1101,8 @@ footer {
 .social-icons a {
     color: white;
     text-decoration: none;
-    margin: 0 6px;
+    margin-right: 24px;
+    margin-left: 0px;
     /* Space between icons */
     display: inline-block;
     /* Align icons in a row */
@@ -1039,3 +1113,7 @@ footer {
     opacity: 0.7;
     /* Hover effect for icons */
 }
+
+.social-icons:last-child {
+    margin-right: 0;
+  }
