@@ -1,8 +1,39 @@
+
 body {
+    font-family: 'Roboto Mono', monospace;
+    color: #333333;
+    margin: 0;
+    
+}
+
+.body {
+    font-family: 'Roboto Mono', monospace;
+    color: #333333;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 16px 0px;
+    font-weight: 500;
+
+}
+
+.body-bold {
 
     font-family: 'Roboto Mono', monospace;
-    margin: 0px;
+    font-size: 17px;
+    line-height: 24px;
+    margin: 16px 0px;
     color: #333333;
+    font-weight: 700;
+}
+
+.image-caption {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    color: #6a6a6a;
+    margin: 0px;
+    padding: 6px 0px 6px 6px;
 }
 
 .title {
@@ -10,7 +41,7 @@ body {
     font-size: 72px;
     line-height: 50px;
     color: #000000;
-    padding: 0;
+    padding: 6px 0;
     margin: 0;
 
 }
@@ -31,19 +62,70 @@ body {
     margin: 0;
 }
 
+.h2-rich-text {
+    color: #333333;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
 .h3 {
     color: #333333;
     font-size: 28px;
-    line-height: 50px;
+    line-height: 36px;
     font-weight: 700;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .paragraph {
     color: #333333;
     font-size: 20px;
     line-height: 28px;
-    margin: 0;
+    margin: 0px;
 
+}
+
+.paragraph-bold {
+    color: #333333;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 16px 0px;
+    font-weight: 700;
+
+}
+
+
+li {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+
+ul {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 0 0 0 24px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-weight: 500;
+}
+
+ol {
+    font-size: 17px;
+    line-height: 24px;
+    padding: 0 0 0 24px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-top: 0px;
+    margin-right: 0px;
+    font-weight: 500;
 }
 
 ::selection {
@@ -75,6 +157,34 @@ body {
     margin: auto;
 }
 
+.container {
+    max-width: 880px;
+    margin: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+
+}
+
+.work-header-image {
+    border-radius: 12px;
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    padding: 0px;
+    border: 1px solid rgba(0,0,0,.1);
+
+}
+
+.work-page-summary {
+    padding: 0px;
+}
+
+.work-page-content-w-rich-text {
+    padding: 24px 0;
+
+}
+
 .profile-card {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -91,11 +201,22 @@ body {
 
 @media screen and (min-width: 991px) {
 
+
+    .h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
     .paragraph,
     .button,
     .link,
     .project-link {
         font-size: 20px;
+    }
+
+    .body {
+        font-size: 17px;
+        line-height: 24px;
     }
 
     .flex-row-child-left {
@@ -122,8 +243,8 @@ body {
     footer {
         padding-left: 32px;
         padding-right: 32px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 24px;
+        padding-bottom: 48px;
     }
 
     .modal-content {
@@ -142,6 +263,20 @@ body {
     .next {
         display: block;
         display: flex;
+    }
+
+    .work-project-wrapper {
+        padding: 60px 0px;
+    }
+
+
+    .h2-rich-text {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .work-page-summary {
+        padding: 24px 0px;
     }
 
 
@@ -180,15 +315,44 @@ body {
 }
 
 
-@media screen and (min-width: 1012px) and (max-width:1056px) {
+@media screen and (min-width: 992px) and (max-width:1056px) {
+
+    .flex-wrapper {
+        gap: 40px;
+    }
+
     .flex-row-child-right {
         max-width: 100%;
 
     }
 
+    .flex-row-child-left {
+        max-width: 36%;
+
+    }
+
+
+    .h2-rich-text {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+
+    .h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .body {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .work-page-summary {
+        padding: 24px 0px;
+    }
 
 }
-
 
 
 /* Styles for tablets and below */
@@ -226,6 +390,18 @@ body {
         line-height: 32px;
         font-weight: 700;
         margin: 0;
+    }
+
+
+    .h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .body {
+        font-size: 17px;
+        line-height: 24px;
+    
     }
 
     .paragraph,
@@ -295,10 +471,8 @@ body {
 
 
     footer {
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-top: 80px;
-        padding-bottom: 80px;
+        padding-top: 24px;
+        padding-bottom: 48px;
 
     }
 
@@ -316,9 +490,34 @@ body {
         display: flex;
     }
 
+    .work-project-wrapper {
+        padding: 60px 0px;
+    }
+
+
+    .h2-rich-text {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .work-page-summary {
+        padding: 24px 0px;
+    }
+
 }
 
 @media (min-width: 767px) and (max-width: 860px) {
+
+    .body {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+
+    .h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
 
     .image-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -337,6 +536,24 @@ body {
     .next {
         display: block;
         display: flex;
+    }
+
+    .work-project-wrapper {
+        padding: 60px 0px;
+    }
+
+    .h2-rich-text {
+        font-size: 36px;
+        line-height: 44px;
+    }
+
+    .work-page-summary {
+        padding: 24px 0px;
+    }
+
+    .footer-content {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
 
@@ -363,7 +580,6 @@ body {
         width: 100%;
     }
 
-
     .flex-row-child-left {
         display: none;
 
@@ -388,11 +604,21 @@ body {
         margin: 0;
     }
 
+    .h3 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
     .paragraph,
     .button,
     .link,
     .project-link {
         font-size: 18px;
+    }
+
+    .body {
+        font-size: 16px;
+        line-height: 24px;
     }
 
     .illy-logo {
@@ -427,13 +653,6 @@ body {
         padding-bottom: 32px;
     }
 
-    .footer-content {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-
-
-
     /* Photo modal on smaller screens <767px */
 
     .img-slides {
@@ -449,6 +668,26 @@ body {
 
     .close {
         background-color: #2b2b2b;
+    }
+
+    .work-project-wrapper {
+        padding: 40px 0px;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 32px;
+    
+    }
+
+    .work-page-summary {
+        padding: 8px 0px 8px 0px;
+    }
+
+    .h2-rich-text {
+        font-size: 32px;
+        line-height: 40px;
     }
 
 
@@ -471,6 +710,11 @@ body {
 
     .title-flex-special-mobile-wrap {
         display: none;
+    }
+
+    .h2-rich-text {
+        font-size: 32px;
+        line-height: 40px;
     }
 
 }
@@ -503,6 +747,11 @@ body {
     .profile-img {
         max-width: 100%;
     }
+
+    .h2-rich-text {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
 
 
@@ -528,6 +777,11 @@ body {
         padding-right: 16px;
     }
 
+    .h2-rich-text {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
 }
 
 /* Styles for mobile portrait and below */
@@ -550,10 +804,15 @@ body {
     }
 
     .h1 {
-        font-size: 32px;
+        font-size: 36px;
         line-height: 40px;
         font-weight: 700;
         margin: 0;
+    }
+
+    .h2-rich-text {
+        font-size: 32px;
+        line-height: 40px;
     }
 
     .paragraph,
@@ -735,6 +994,21 @@ body {
     text-decoration: underline;
 }
 
+.rich-text-link {
+    font-size: 17px;
+    line-height: 24px;
+    color: #333333;
+    background-repeat: no-repeat;
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: rgb(197, 197, 197);
+}
+
+.rich-text-link:hover {
+    color: magenta;
+    text-decoration: underline;
+}
+
 .button-container {
     display: flex;
 
@@ -770,11 +1044,10 @@ body {
     border: none;
     height: 1px;
     background-color: #E2E2E2;
-    margin: 8px;
+    margin: 0px;
 }
 
 .work-project-wrapper {
-    padding: 60px 0px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -1139,7 +1412,7 @@ body {
 .thumbnail.active {
     border: 2px solid #fff;
     /* White border for the active thumbnail */
-    box-shadow: 0 0 8px #fff;
+    box-shadow: 0 0 8px #000000;
     opacity: 1;
     /* Glow effect for the active thumbnail */
 }
@@ -1168,8 +1441,7 @@ footer {
     justify-content: center;
     height: 28px;
     width: 28px;
-    margin-bottom: 24px;
-    /* Space between icons and copyright text */
+    margin-bottom: 8px;
 }
 
 .social-icons a {
@@ -1180,12 +1452,10 @@ footer {
     /* Space between icons */
     display: inline-block;
     /* Align icons in a row */
-    /* Add additional styles for icons here */
 }
 
 .social-icons a:hover {
     opacity: 0.7;
-    /* Hover effect for icons */
 }
 
 .social-icons:last-child {
