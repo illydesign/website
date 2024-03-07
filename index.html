@@ -17,9 +17,26 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
 
+
 </head>
 
 <body>
+    <div class="nav-container-wide">
+        <div class="nav-wrapper">
+            <a href="/" class="logo-text">
+                <div class="logo-text">illydesign</div>
+
+            <nav class="navbar" aria-label="Main navigation">
+                <ul class="nav-menu list-unstyled">
+                    <li class="no-margin-bottom"><a href="/" class="nav-link" aria-current="page">Work</a></li>
+                    <li class="no-margin-bottom"><a href="../assets/files/Illy Dimitrova CV.pdf"target="_blank" class="nav-link">CV</a></li>
+                   <!-- <li class="no-margin-bottom"><a href="#about" class="nav-link">About</a></li> -->
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+
     <header>
         <div class="section">
             <div class="profile-card">
@@ -72,19 +89,21 @@
                             <img src="./assets/icons/illy.svg" alt="illy-logo" class="illy-logo">
 
                         </div>
-                        <p class="paragraph"> I'm a digital product designer based in London, UK. My mission is to
-                            design and build exceptional products for users and
-                            businesses. I've been working with SaaS companies since 2018. Along the way,
-                            I've designed for startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
-                            subscriptions and more.
+                        <p class="paragraph"> I'm a digital product designer based in London, UK. I design and build exceptional products for users and
+                            businesses.
                         </p>
+                        <p class="paragraph">I've been working with SaaS companies since 2018. Along the way,
+                            I've designed for startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
+                            subscriptions and more.</p>
 
-                        <div class="button-wrapper">
+                            <p class="paragraph">Get in touch if you'd like to discuss a project.</p>
+
+                        <!-- <div class="button-wrapper">
                             <span class="icon-style">📖</span>
                             <button class="button"
                                 onclick="window.open('./assets/files/Illy Dimitrova CV.pdf', '_blank')">See
                                 my resumé</button>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -105,7 +124,8 @@
                     <div class="modal-content">
 
                         <div class="mySlides">
-                            <img class="img-slides" src="./assets/images/work/krokit/hero-image-krokit.webp" alt="hero-image-krokit">
+                            <img class="img-slides" src="./assets/images/work/krokit/hero-image-krokit.webp"
+                                alt="hero-image-krokit">
                             <div class="slide-text">Krokit </div>
                         </div>
 
@@ -753,7 +773,7 @@
 
     <script>
         const currentYear = new Date().getFullYear();
-        document.getElementById('copyright').textContent = `© ${currentYear} Illy Dimitrova | Handmade in HTML, CSS and Vanilla JS`;
+        document.getElementById('copyright').textContent = `© ${currentYear} Illy Dimitrova | Handmade in HTML, CSS & Vanilla JS`;
     </script>
 
 

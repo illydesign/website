@@ -1,9 +1,8 @@
-
 body {
     font-family: 'Roboto Mono', monospace;
     color: #333333;
     margin: 0;
-    
+
 }
 
 .body {
@@ -97,19 +96,28 @@ body {
 
 }
 
+.logo-text {
+    font-size: 32px;
+    height: 40px;
+    color: #000;
+    letter-spacing: -.05rem;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
 
 li {
     margin-bottom: 12px;
     font-weight: 500;
-    font-size: 17px;
     line-height: 24px;
 }
 
+.no-margin-bottom {
+    margin-bottom: 0px;
+}
 
 ul {
-    font-size: 17px;
     line-height: 24px;
-    padding: 0 0 0 24px;
     margin-bottom: 16px;
     margin-left: 16px;
     margin-top: 0px;
@@ -118,9 +126,7 @@ ul {
 }
 
 ol {
-    font-size: 17px;
     line-height: 24px;
-    padding: 0 0 0 24px;
     margin-bottom: 16px;
     margin-left: 16px;
     margin-top: 0px;
@@ -132,6 +138,110 @@ ol {
     background: magenta;
 }
 
+.nav-container-wide {
+    padding: 32px 32px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.nav-wrapper {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    grid-column-gap: 0.25rem;
+    grid-row-gap: 0.8rem;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
+
+.nav-link {
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+    align-items: center;
+    padding: 4px 16px;
+    margin: 0px 4px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5f5f63;
+    transition: color .3s, transform .3s, background-color .3s;
+}
+
+.nav-link:hover {
+    color: #000000;
+    background-color: #DADADA;
+    cursor: pointer;
+    border: 1px #000;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transform: scale(1.02);
+}
+
+.nav-link[aria-current="page"] {
+    color: #000000;
+}
+
+.nav-link.w--current {
+    color: #000000;
+}
+
+.nav-link:hover:not([aria-current="page"]) {
+    color: #000000;
+    background-color: #DADADA;
+    cursor: pointer;
+    border-radius: 4px;
+    transform: scale(1.02);
+}
+
+.nav-link[aria-current="page"], .nav-link.w--current {
+    color: #000000;
+}
+
+.nav-link[aria-current="page"]:hover, .nav-link.w--current:hover {
+    background-color: transparent;
+
+}
+
+.nav-link li {
+    margin: 0 16px;
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: #5F5F63;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.navbar {
+    background-color: transparent;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.list-unstyled {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
 .icon-style {
     color: #333333;
     font-size: 20px;
@@ -141,7 +251,7 @@ ol {
 }
 
 .profile-img {
-    max-width: 272px;
+    max-width: 260px;
     vertical-align: middle;
     border-radius: 12px;
 }
@@ -163,7 +273,6 @@ ol {
     padding-left: 32px;
     padding-right: 32px;
     padding-top: 64px;
-
 }
 
 .work-header-image {
@@ -172,7 +281,7 @@ ol {
     height: auto;
     margin: 0px;
     padding: 0px;
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid rgba(0, 0, 0, .1);
 
 }
 
@@ -186,8 +295,8 @@ ol {
 }
 
 .profile-card {
-    padding-top: 120px;
-    padding-bottom: 60px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .flex-wrapper {
@@ -219,6 +328,21 @@ ol {
         line-height: 24px;
     }
 
+    li {
+        font-size: 17px;
+    }
+
+
+    ul {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
+    ol {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
     .flex-row-child-left {
         max-width: 36%;
 
@@ -226,7 +350,7 @@ ol {
 
     .flex-row-child-right {
         max-width: 56%;
-
+        gap: 40px;
     }
 
 
@@ -279,6 +403,52 @@ ol {
         padding: 24px 0px;
     }
 
+    .image-grid-one {
+        border-radius: 20px;
+        padding: 16px;
+    }
+
+    .image-grid-one img {
+        border-radius: 12px;
+    }
+
+    .image-grid-one img:hover {
+        opacity: 0.7;
+    }
+
+
+    .image-grid-two {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-two img {
+        transition: 0.3s;
+        border-radius: 12px;
+        max-width: calc(50% - 16px);
+    }
+
+    .image-grid-two img:hover {
+        opacity: 0.7;
+    }
+
+
+    .image-grid-three {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-three img {
+        border-radius: 12px;
+        max-width: calc(33.333% - 16px);
+    }
+
 
 }
 
@@ -323,6 +493,7 @@ ol {
 
     .flex-row-child-right {
         max-width: 100%;
+        gap: 40px;
 
     }
 
@@ -348,8 +519,69 @@ ol {
         line-height: 24px;
     }
 
+    li {
+        font-size: 17px;
+    }
+
+
+    ul {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
+    ol {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
     .work-page-summary {
         padding: 24px 0px;
+    }
+
+    .image-grid-one {
+        border-radius: 20px;
+        padding: 16px;
+    }
+
+    .image-grid-one img {
+        border-radius: 12px;
+    }
+
+    .image-grid-one img:hover {
+        opacity: 0.7;
+    }
+
+
+    .image-grid-two {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-two img {
+        transition: 0.3s;
+        border-radius: 12px;
+        max-width: calc(50% - 16px);
+    }
+
+    .image-grid-two img:hover {
+        opacity: 0.7;
+    }
+
+
+    .image-grid-three {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-three img {
+        border-radius: 12px;
+        max-width: calc(33.333% - 16px);
     }
 
 }
@@ -371,6 +603,7 @@ ol {
 
     .flex-row-child-right {
         max-width: 90%;
+        gap: 40px;
     }
 
     .title {
@@ -401,7 +634,22 @@ ol {
     .body {
         font-size: 17px;
         line-height: 24px;
-    
+
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+
+    ul {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
+    ol {
+        font-size: 17px;
+        padding: 0 0 0 24px;
     }
 
     .paragraph,
@@ -433,7 +681,6 @@ ol {
         display: none;
     }
 
-
     .illy-logo {
         max-width: 154px;
         height: 114px;
@@ -460,22 +707,11 @@ ol {
         height: 56px;
     }
 
-    .image-grid-three img {
-        max-width: calc(50% - 16px);
-    }
-
-    .image-grid {
-        grid-template-columns: repeat(4, 1fr);
-        gap: 24px;
-    }
-
-
     footer {
         padding-top: 24px;
         padding-bottom: 48px;
 
     }
-
 
     .img-slides {
         border-radius: 12px;
@@ -504,6 +740,53 @@ ol {
         padding: 24px 0px;
     }
 
+    .image-grid-one {
+        border-radius: 20px;
+        padding: 16px;
+    }
+
+    .image-grid-one img {
+        border-radius: 12px;
+    }
+
+    .image-grid-one img:hover {
+        opacity: 0.7;
+    }
+
+    .image-grid-two {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+    }
+
+    .image-grid-two img {
+        transition: 0.3s;
+        border-radius: 12px;
+        max-width: calc(50% - 16px);
+    }
+
+    .image-grid-two img:hover {
+        opacity: 0.7;
+    }
+
+    .image-grid-three {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+    }
+
+    .image-grid-three img {
+        border-radius: 12px;
+        max-width: calc(50% - 8px);
+    }
+
+    .image-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
 }
 
 @media (min-width: 767px) and (max-width: 860px) {
@@ -511,6 +794,21 @@ ol {
     .body {
         font-size: 17px;
         line-height: 24px;
+    }
+
+    li {
+        font-size: 17px;
+    }
+
+
+    ul {
+        font-size: 17px;
+        padding: 0 0 0 24px;
+    }
+
+    ol {
+        font-size: 17px;
+        padding: 0 0 0 24px;
     }
 
 
@@ -529,6 +827,12 @@ ol {
         max-width: 82.3vw;
         max-height: 84vh;
         display: block;
+    }
+
+
+    .profile-card {
+        padding-top: 24px;
+        padding-bottom: 40px;
     }
 
     /* Style the arrows for navigation */
@@ -556,6 +860,48 @@ ol {
         padding-right: 16px;
     }
 
+    .image-grid-one {
+        border-radius: 20px;
+        padding: 16px;
+    }
+
+    .image-grid-one img {
+        border-radius: 12px;
+    }
+
+    .image-grid-one img:hover {
+        opacity: 0.7;
+    }
+
+
+    .image-grid-two {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-two img {
+        transition: 0.3s;
+        border-radius: 12px;
+    }
+
+    .image-grid-two img:hover {
+        opacity: 0.7;
+    }
+
+    .image-grid-three {
+        gap: 16px;
+        border-radius: 20px;
+        padding: 16px;
+        padding-right: 0;
+        /* Adjust the gap as needed */
+    }
+
+    .image-grid-three img {
+        border-radius: 12px;
+    }
 
 }
 
@@ -578,6 +924,7 @@ ol {
     .flex-row-child-right {
         max-width: 100%;
         width: 100%;
+        gap: 32px;
     }
 
     .flex-row-child-left {
@@ -621,9 +968,31 @@ ol {
         line-height: 24px;
     }
 
+    li {
+        font-size: 16px;
+    }
+
+
+    ul {
+        font-size: 16px;
+        padding: 0 0 0 16px;
+    }
+
+    ol {
+        font-size: 16px;
+        padding: 0 0 0 16px;
+    }
+
     .illy-logo {
         width: 154px;
         height: 114px;
+    }
+
+
+    .logo-text {
+        font-size: 26px;
+        height: auto;
+
     }
 
     .profile-img {
@@ -631,7 +1000,7 @@ ol {
     }
 
     .profile-card {
-        padding-top: 40px;
+        padding-top: 24px;
         padding-bottom: 40px;
     }
 
@@ -678,7 +1047,7 @@ ol {
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 32px;
-    
+
     }
 
     .work-page-summary {
@@ -690,8 +1059,35 @@ ol {
         line-height: 40px;
     }
 
+    .nav-container-wide {
+        padding: 32px 16px 32px;
+        margin: 0px;
+    }
 
+    .image-grid-one,
+    .image-grid-two,
+    .image-grid-three {
+        border-radius: 16px;
+        padding: 8px;
+    }
+
+    .image-grid-one img,
+    .image-grid-two img,
+    .image-grid-three img {
+        border-radius: 8px;
+    }
+
+    .image-grid-two img {
+        max-width: calc(50% - 8px);
+
+    }
+
+    .image-grid-two, .image-grid-three {
+        gap: 8px;
+    }
+    
 }
+
 
 @media (min-width: 664px) and (max-width: 767px) {
 
@@ -757,6 +1153,7 @@ ol {
 
 
 @media (min-width: 478px) and (max-width: 767px) {
+
     .image-grid {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -795,7 +1192,8 @@ ol {
 
     .flex-row-child-right {
         max-width: 100%;
-
+        width: 100%;
+        gap: 32px;
     }
 
     .title {
@@ -840,8 +1238,8 @@ ol {
     }
 
     .illy-logo {
-        width: 134px;
-        height: 94px;
+        width: 124px;
+        height: 84px;
     }
 
     .profile-img {
@@ -849,7 +1247,7 @@ ol {
     }
 
     .profile-card {
-        padding-top: 40px;
+        padding-top: 0px;
         padding-bottom: 40px;
     }
 
@@ -907,13 +1305,11 @@ ol {
 .flex-row-child-right {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-
 }
 
 
 .contact-info {
-    padding: 40px 0;
+    padding: 40px 0px 0px;
 
 }
 
@@ -944,7 +1340,7 @@ ol {
     grid-column-gap: 24px;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 24px;
 }
 
 .functional-icon {
@@ -1146,8 +1542,6 @@ ol {
     justify-content: center;
     align-items: center;
     background-color: black;
-    border-radius: 20px;
-    padding: 16px;
 }
 
 .image-grid-one img {
@@ -1155,7 +1549,6 @@ ol {
     /* Make sure the image is not wider than the container */
     height: auto;
     /* Keep the image aspect ratio */
-    border-radius: 12px;
 }
 
 .image-grid-one img:hover {
@@ -1166,21 +1559,15 @@ ol {
 .image-grid-two {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     background-color: black;
-    border-radius: 20px;
-    padding: 16px;
     padding-right: 0;
     /* Adjust the gap as needed */
 }
 
 .image-grid-two img {
     width: auto;
-    max-width: calc(50% - 16px);
-    /* Set to half, adjust the 10px if you change the gap */
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 12px;
 }
 
 .image-grid-two img:hover {
@@ -1191,10 +1578,7 @@ ol {
 .image-grid-three {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
     background-color: black;
-    border-radius: 20px;
-    padding: 16px;
     padding-right: 0;
     /* Adjust the gap as needed */
 }
@@ -1203,7 +1587,6 @@ ol {
     width: 100%;
     cursor: pointer;
     transition: 0.3s;
-    border-radius: 12px;
 }
 
 .image-grid-three img:hover {
@@ -1212,6 +1595,10 @@ ol {
 
 .image-grid-three img:nth-child(3n) {
     margin-right: 0;
+}
+
+.image-grid {
+    gap: 24px;
 }
 
 .img-slides {
