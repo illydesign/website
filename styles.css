@@ -37,8 +37,8 @@ body {
 
 .title {
     font-weight: 700;
-    font-size: 72px;
-    line-height: 50px;
+    font-size: 48px;
+    line-height: 56px;
     color: #000000;
     padding: 6px 0;
     margin: 0;
@@ -96,14 +96,9 @@ body {
 
 }
 
-.logo-text {
-    font-size: 32px;
-    height: 40px;
-    color: #000;
-    letter-spacing: -.05rem;
+.nav-logo {
     padding-top: 2px;
     padding-bottom: 2px;
-    text-decoration: none;
 }
 
 li {
@@ -185,7 +180,6 @@ ol {
     color: #000000;
     background-color: #DADADA;
     cursor: pointer;
-    border: 1px #000;
     border-radius: 4px;
     font-weight: 600;
     text-decoration: none;
@@ -253,7 +247,7 @@ ol {
 .profile-img {
     max-width: 260px;
     vertical-align: middle;
-    border-radius: 12px;
+    border-radius: 16px;
 }
 
 .illy-logo {
@@ -295,8 +289,8 @@ ol {
 }
 
 .profile-card {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 0px;
+    padding-bottom: 48px;
 }
 
 .flex-wrapper {
@@ -461,8 +455,8 @@ ol {
 }
 
 .illy-logo {
-    width: 204px;
-    height: 154px;
+    width: 140px;
+    height: 116px;
 }
 
 .narrow-text-container {
@@ -488,7 +482,7 @@ ol {
 @media screen and (min-width: 992px) and (max-width:1056px) {
 
     .flex-wrapper {
-        gap: 40px;
+        gap: 56px;
     }
 
     .flex-row-child-right {
@@ -607,8 +601,8 @@ ol {
     }
 
     .title {
-        font-size: 56px;
-        line-height: 60px;
+        font-size: 48px;
+        line-height: 56px;
     }
 
     .h1 {
@@ -681,19 +675,13 @@ ol {
         display: none;
     }
 
-    .illy-logo {
-        max-width: 154px;
-        height: 114px;
-
-    }
-
     .profile-img {
         max-width: 20vw;
     }
 
     .profile-card {
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 0px;
+        padding-bottom: 48x;
     }
 
     .narrow-text-container {
@@ -831,7 +819,7 @@ ol {
 
 
     .profile-card {
-        padding-top: 24px;
+        padding-top: 0px;
         padding-bottom: 40px;
     }
 
@@ -903,6 +891,12 @@ ol {
         border-radius: 12px;
     }
 
+
+    .illy-logo {
+        width: 120px;
+        height: 96px;
+    }
+
 }
 
 
@@ -933,8 +927,8 @@ ol {
     }
 
     .title {
-        font-size: 56px;
-        line-height: 60px;
+        font-size: 38px;
+        line-height: 46px;
     }
 
     .h1 {
@@ -984,8 +978,8 @@ ol {
     }
 
     .illy-logo {
-        width: 154px;
-        height: 114px;
+        width: 110px;
+        height: 86px;
     }
 
 
@@ -1000,7 +994,7 @@ ol {
     }
 
     .profile-card {
-        padding-top: 24px;
+        padding-top: 0px;
         padding-bottom: 40px;
     }
 
@@ -1113,6 +1107,11 @@ ol {
         line-height: 40px;
     }
 
+    .illy-logo {
+        width: 110px;
+        height: 86px;
+    }
+
 }
 
 
@@ -1136,8 +1135,8 @@ ol {
     }
 
     .illy-logo {
-        width: 134px;
-        height: 94px;
+        width: 110px;
+        height: 86px;
     }
 
     .profile-img {
@@ -1177,6 +1176,11 @@ ol {
     .h2-rich-text {
         font-size: 32px;
         line-height: 40px;
+    }
+
+    .illy-logo {
+        width: 110px;
+        height: 86px;
     }
 
 }
@@ -1238,8 +1242,8 @@ ol {
     }
 
     .illy-logo {
-        width: 124px;
-        height: 84px;
+        width: 110px;
+        height: 86px;
     }
 
     .profile-img {
@@ -1337,7 +1341,7 @@ ol {
 
 
 .title-flex-special-mobile {
-    grid-column-gap: 24px;
+    grid-column-gap: 40px;
     flex-direction: row;
     align-items: center;
     padding-bottom: 24px;
