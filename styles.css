@@ -254,6 +254,11 @@ ol {
     vertical-align: middle;
 }
 
+.illy-handwriting {
+    width: 217px;
+    vertical-align: middle;
+}
+
 .section {
     padding-left: 32px;
     padding-right: 32px;
@@ -457,6 +462,10 @@ ol {
 .illy-logo {
     width: 140px;
     height: 116px;
+}
+
+.illy-handwriting {
+    width: 217px;
 }
 
 .narrow-text-container {
@@ -897,6 +906,10 @@ ol {
         height: 96px;
     }
 
+    .illy-handwriting {
+        width: 197px;
+    }
+
 }
 
 
@@ -980,6 +993,11 @@ ol {
     .illy-logo {
         width: 110px;
         height: 86px;
+    }
+
+    .illy-handwriting {
+        width: 187px;
+        
     }
 
 
@@ -1320,8 +1338,8 @@ ol {
 .title-flex {
 
     align-items: center;
-    gap: 32px;
-    grid-column-gap: 40px;
+    gap: 24px;
+    grid-column-gap: 28px;
 }
 
 .title-flex-special {
@@ -1341,7 +1359,7 @@ ol {
 
 
 .title-flex-special-mobile {
-    grid-column-gap: 40px;
+    grid-column-gap: 24px;
     flex-direction: row;
     align-items: center;
     padding-bottom: 24px;
