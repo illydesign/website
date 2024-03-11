@@ -17,6 +17,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BLZ6ZCHRC"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-1BLZ6ZCHRC');
+    </script>
 
 </head>
 
@@ -30,13 +39,14 @@
             <nav class="navbar" aria-label="Main navigation">
                 <ul class="nav-menu list-unstyled">
                     <li class="no-margin-bottom"><a href="/" class="nav-link" aria-current="page">Work</a></li>
-                    <li class="no-margin-bottom"><a href="../assets/files/Illy Dimitrova CV.pdf"target="_blank" class="nav-link">CV</a></li>
-                   <!-- <li class="no-margin-bottom"><a href="#about" class="nav-link">About</a></li> -->
+                    <li class="no-margin-bottom"><a href="https://read.cv/illy" target="_blank" class="nav-link">CV</a>
+                    </li>
+                    <!-- <li class="no-margin-bottom"><a href="#about" class="nav-link">About</a></li> -->
                 </ul>
             </nav>
         </div>
     </div>
-    
+
 
     <header>
         <div class="section">
@@ -57,10 +67,20 @@
                     <div class="flex-row-child-left">
                         <img class="profile-img" src="./assets/images/illy-dimitrova.jpg" alt="Profile picture" />
                         <div class="contact-info">
+
                             <div class="icon-wrapper">
                                 <img class="icon" src="./assets/icons/email-icon-outline.svg" alt="Email Icon">
-                                <a target="_blank" href="mailto:hi@illydesign.xyz" class="link">hi@illydesign.xyz</a>
+                                <a href="javascript:void(0)" class="link" onclick="copyEmail()">
+                                    hi@illydesign.xyz
+                                    <span class="copy-tooltip">
+                                        <img src="./assets/icons/copy-to-clipboard.svg" alt="Copy Icon"
+                                            class="copy-icon">
+                                        Copy
+                                    </span>
+                                </a>
                             </div>
+
+
                             <div class="icon-wrapper">
                                 <img class="icon" src="./assets/icons/x-icon.svg" alt="Twitter Icon">
                                 <a target="_blank" href="https://twitter.com/illydimitrova" class="link">X (Twitter)</a>
@@ -68,6 +88,10 @@
                             <div class="icon-wrapper">
                                 <img class="icon" src="./assets/icons/dribble-icon.png" alt="Dribbble Icon">
                                 <a target="_blank" href="https://dribbble.com/illydimitrova" class="link">Dribble</a>
+                            </div>
+                            <div class="icon-wrapper">
+                                <img class="icon" src="./assets/icons/github-icon.svg" alt="Github Icon">
+                                <a target="_blank" href="https://github.com/illydesign" class="link">Github</a>
                             </div>
                             <div class="icon-wrapper">
                                 <img class="icon" src="./assets/icons/instagram-icon.svg" alt="Instagram Icon">
@@ -87,17 +111,19 @@
                     <div class="flex-row-child-right">
                         <div class="title-flex">
                             <img src="./assets/images/hi, I'm.webp" alt="hi, i'm" class="illy-handwriting">
-                            <img src="./assets/images/illy-design-logo-blue.png" alt="illy-design-logo" class="illy-logo">
+                            <img src="./assets/images/illy-design-logo-blue.png" alt="illy-design-logo"
+                                class="illy-logo">
 
                         </div>
-                        <p class="paragraph"> I'm a product designer based in London, UK. I design and build exceptional products for users and
+                        <p class="paragraph"> I'm a product designer based in London, UK. I design and build exceptional
+                            products for users and
                             businesses.
                         </p>
                         <p class="paragraph">I've been working with SaaS companies since 2018. Along the way,
                             I've designed for startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
                             subscriptions and more.</p>
 
-                            <p class="paragraph">Get in touch if you'd like to discuss a project.</p>
+                        <p class="paragraph">Get in touch if you'd like to discuss a project.</p>
 
                         <!-- <div class="button-wrapper">
                             <span class="icon-style">📖</span>
@@ -663,6 +689,9 @@
                 <a href="https://dribbble.com/illydimitrova" target="_blank">
                     <img src="./assets/icons/dribble-icon.png" alt="dribble-icon-inverted" class="social-icons" />
                 </a>
+                <a href="https://github.com/illydesign" target="_blank">
+                    <img src="./assets/icons/github-icon.svg" alt="github-icon" class="social-icons" />
+                </a>
                 <a href="https://www.instagram.com/illy_dimitrova/" target="_blank">
                     <img src="./assets/icons/instagram-icon.svg" alt="instagram-icon-inverted" class="social-icons" />
                 </a>
@@ -767,6 +796,27 @@
                 }
             }
         });
+
+
+
+        function copyEmail() {
+            var tempInput = document.createElement("input");
+            var email = document.querySelector('.icon-wrapper .link').textContent.trim();
+            document.body.appendChild(tempInput);
+            tempInput.value = email;
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            var tooltip = document.querySelector('.icon-wrapper .link .copy-tooltip');
+            tooltip.innerHTML = 'Copied!';
+
+            setTimeout(function () {
+                tooltip.innerHTML = '<img src="./assets/icons/copy-to-clipboard.svg" alt="Copy Icon" class="copy-icon">Copy';
+            }, 2000);
+        }
+
+
 
 
 
