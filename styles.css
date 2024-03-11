@@ -255,7 +255,6 @@ ol {
 }
 
 .illy-handwriting {
-    width: 217px;
     vertical-align: middle;
 }
 
@@ -1130,6 +1129,11 @@ ol {
         height: 86px;
     }
 
+    .illy-handwriting {
+        width: 167px;
+        
+    }
+
 }
 
 
@@ -1165,6 +1169,11 @@ ol {
         font-size: 32px;
         line-height: 40px;
     }
+
+    .illy-handwriting {
+        width: 167px;
+        
+    }
 }
 
 
@@ -1199,6 +1208,11 @@ ol {
     .illy-logo {
         width: 110px;
         height: 86px;
+    }
+
+    .illy-handwriting {
+        width: 167px;
+        
     }
 
 }
