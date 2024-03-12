@@ -379,7 +379,6 @@ ol {
         width: 90%;
     }
 
-
     .img-slides {
         border-radius: 12px;
         max-width: 82.3vw;
@@ -426,7 +425,6 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
     }
 
     .image-grid-two img {
@@ -445,7 +443,6 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
     }
 
     .image-grid-three img {
@@ -453,6 +450,34 @@ ol {
         max-width: calc(33.333% - 16px);
     }
 
+    .thumbnail {
+        margin-right: 12px;
+        height: auto;
+        width: auto;
+        max-height: 120px;
+        max-width: 120px;
+        border-radius: 12px;
+    }
+
+    .thumbnail-container {
+        justify-content: center;
+        padding: 10px 10px;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        text-align: left;
+        padding: 16px 24px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
 
 }
 
@@ -569,7 +594,6 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
     }
 
     .image-grid-two img {
@@ -588,12 +612,45 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
+
     }
 
     .image-grid-three img {
         border-radius: 12px;
         max-width: calc(33.333% - 16px);
+    }
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .thumbnail {
+        margin-right: 12px;
+        height: auto;
+        width: auto;
+        max-height: 120px;
+        max-width: 120px;
+        border-radius: 12px;
+    }
+
+    .thumbnail-container {
+        justify-content: center;
+        padding: 10px 10px;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        text-align: left;
+        padding: 16px 24px;
+        font-size: 16px;
+        box-sizing: border-box;
     }
 
 }
@@ -802,6 +859,39 @@ ol {
         gap: 24px;
     }
 
+    .modal-content {
+        width: 90%;
+    }
+
+    .thumbnail {
+        margin-right: 12px;
+        height: auto;
+        width: auto;
+        max-height: 120px;
+        max-width: 120px;
+        border-radius: 12px;
+    }
+
+    .thumbnail-container {
+        justify-content: center;
+        padding: 10px 10px;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        text-align: left;
+        padding: 16px 24px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
 }
 
 @media (min-width: 767px) and (max-width: 860px) {
@@ -850,7 +940,6 @@ ol {
         padding-bottom: 40px;
     }
 
-    /* Style the arrows for navigation */
     .prev,
     .next {
         display: block;
@@ -894,7 +983,7 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
+
     }
 
     .image-grid-two img {
@@ -911,7 +1000,6 @@ ol {
         border-radius: 20px;
         padding: 16px;
         padding-right: 0;
-        /* Adjust the gap as needed */
     }
 
     .image-grid-three img {
@@ -926,6 +1014,10 @@ ol {
 
     .illy-handwriting {
         width: 197px;
+    }
+
+    .modal-content {
+        width: 90%;
     }
 
 }
@@ -1025,7 +1117,7 @@ ol {
 
     .illy-handwriting {
         width: 187px;
-        
+
     }
 
 
@@ -1062,12 +1154,10 @@ ol {
         padding-bottom: 32px;
     }
 
-    /* Photo modal on smaller screens <767px */
-
     .img-slides {
         border-radius: 12px;
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 82.3vw;
+        max-height: 84vh;
         display: block;
     }
 
@@ -1125,7 +1215,26 @@ ol {
     .image-grid-two, .image-grid-three {
         gap: 8px;
     }
-    
+
+    .modal-content {
+        width: 90%;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 12px;
+        text-align: left;
+        padding: 16px 24px;
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+
 }
 
 
@@ -1160,7 +1269,7 @@ ol {
 
     .illy-handwriting {
         width: 177px;
-        
+
     }
 
 }
@@ -1201,10 +1310,33 @@ ol {
 
     .illy-handwriting {
         width: 177px;
-        
+
+    }
+
+    .modal-content {
+        width: 100%;
     }
 }
 
+
+@media (min-width: 478px) and (max-width: 808px) {
+
+    .thumbnail {
+        margin-right: 8px;
+        height: 100px;
+        width: auto;
+        border-radius: 8px;
+    }
+
+    .thumbnail-container {
+        position: absolute;
+        justify-content: left;
+        padding: 0px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
 
 
 @media (min-width: 478px) and (max-width: 767px) {
@@ -1238,6 +1370,33 @@ ol {
     .illy-logo {
         width: 110px;
         height: 86px;
+    }
+
+}
+
+
+
+@media (min-width: 478px) and (max-width: 512px) {
+
+    .img-slides {
+        border-radius: 0px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 14px;
+        box-sizing: border-box;
     }
 
 }
@@ -1328,7 +1487,6 @@ ol {
         flex-direction: column;
         align-items: center;
         gap: 16px;
-        /* Adjust the gap size as needed */
     }
 
     .image-grid {
@@ -1350,8 +1508,51 @@ ol {
 
     .illy-handwriting {
         width: 167px;
-        
+
     }
+
+    .img-slides {
+        border-radius: 0px;
+        max-width: 100%;
+        max-height: 100%;
+        display: block;
+    }
+
+    .slide-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        max-width: 82.3vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        border-top-right-radius: 8px;
+        border-bottom-left-radius: 0px;
+        text-align: left;
+        padding: 12px 16px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    .modal-content {
+        width: 100%;
+    }
+
+    .thumbnail-container {
+        position: absolute;
+        justify-content: left;
+        padding: 0px;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .thumbnail {
+        height: 80px;
+        width: auto;
+        margin-right: 8px;
+        border-radius: 8px;
+    }
+
 
 }
 
@@ -1546,7 +1747,6 @@ ol {
     display: block;
     transition: box-shadow 0.3s ease;
     border-radius: 12px;
-    /* Optional for rounded corners */
 }
 
 .image-container:hover img {
@@ -1610,9 +1810,8 @@ ol {
 
 .image-grid-one img {
     max-width: 100%;
-    /* Make sure the image is not wider than the container */
     height: auto;
-    /* Keep the image aspect ratio */
+
 }
 
 .image-grid-one img:hover {
@@ -1625,7 +1824,6 @@ ol {
     flex-wrap: wrap;
     background-color: black;
     padding-right: 0;
-    /* Adjust the gap as needed */
 }
 
 .image-grid-two img {
@@ -1644,7 +1842,6 @@ ol {
     flex-wrap: wrap;
     background-color: black;
     padding-right: 0;
-    /* Adjust the gap as needed */
 }
 
 .image-grid-three img {
@@ -1662,14 +1859,12 @@ ol {
 }
 
 .img-slides {
-    border-radius: 12px;
     display: block;
 }
 
-/* The Modal (background) */
+
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
     z-index: 1;
     padding-top: 12px;
@@ -1682,21 +1877,18 @@ ol {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
-/* Modal Content */
+
 .modal-content {
     position: relative;
     display: flex;
     flex-direction: column;
-    /* Stack children vertically */
     align-items: center;
-    /* Center children horizontally */
     margin: auto;
-    padding-bottom: 24px;
-    width: 90%;
+    padding-bottom: 140px;
     max-width: 1040px;
 }
 
-/* The Close Button */
+
 .close {
     height: 40px;
     width: 40px;
@@ -1719,9 +1911,7 @@ ol {
 .close:focus {
     display: flex;
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     color: #f1f1f1;
     text-decoration: none;
     cursor: pointer;
@@ -1758,20 +1948,14 @@ ol {
 .slide-text {
     position: absolute;
     bottom: 0;
-    /* Aligns the text to the bottom */
     left: 0;
     max-width: 82.3vw;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
-    border-top-right-radius: 12px;
-    border-bottom-left-radius: 12px;
     text-align: left;
-    padding: 16px 24px;
-    font-size: 16px;
     box-sizing: border-box;
 }
 
-/* Style the arrows for navigation */
 .prev,
 .next {
     aspect-ratio: 1;
@@ -1796,19 +1980,16 @@ ol {
 
 }
 
-/* Position the "next button" to the right */
 .next {
     right: 0;
     margin-right: 24px;
 }
 
-/* Position the "prev button" to the left */
 .prev {
     left: 0;
     margin-left: 24px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.7);
@@ -1825,21 +2006,13 @@ ol {
 .thumbnail-container {
     height: auto;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 10px 10px;
     overflow-x: auto;
     white-space: nowrap;
 }
 
 .thumbnail {
-    height: auto;
-    width: auto;
-    max-height: 120px;
-    max-width: 120px;
-    margin-right: 12px;
     opacity: 1;
-    border-radius: 12px;
     object-fit: cover;
     transition: opacity 0.2s ease;
     cursor: pointer;
@@ -1852,16 +2025,12 @@ ol {
 
 .thumbnail:hover {
     opacity: 1;
-    /* Thumbnails are fully opaque when hovered */
 }
 
-/* Optional: add a border or shadow to the active thumbnail */
 .thumbnail.active {
     border: 2px solid #fff;
-    /* White border for the active thumbnail */
     box-shadow: 0 0 8px #000000;
     opacity: 1;
-    /* Glow effect for the active thumbnail */
 }
 
 
@@ -1896,9 +2065,7 @@ footer {
     text-decoration: none;
     margin-right: 24px;
     margin-left: 0px;
-    /* Space between icons */
     display: inline-block;
-    /* Align icons in a row */
 }
 
 .social-icons a:hover {
@@ -1918,7 +2085,7 @@ footer {
 }
 
 .icon-wrapper .link .copy-tooltip {
-    visibility: hidden; 
+    visibility: hidden;
     display: flex;
     align-items: center;
     gap: 2px;
@@ -1934,13 +2101,13 @@ footer {
     top: -6px;
     font-size: 14px;
     font-weight: 500;
-    opacity: 0; 
-    transition: opacity .3s, transform .3s; 
+    opacity: 0;
+    transition: opacity .3s, transform .3s;
 }
 
 .icon-wrapper .link:hover .copy-tooltip {
     visibility: visible;
-    opacity: 1; 
+    opacity: 1;
     transform: scale(1.02);
 }
 
@@ -1950,8 +2117,6 @@ footer {
 }
 
 .icon-wrapper .link .copy-tooltip .copy-icon {
-    width: 18px; 
+    width: 18px;
     height: auto;
 }
-
-
