@@ -17,7 +17,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png">
     <link rel="manifest" href="./assets/icons/favicon/site.webmanifest">
 
-    <meta name="description" content="I design and build software for tech companies. Along the way I've worked with startups in B2B fintech, B2C foodtech, tourism, health, flower delivery subscriptions and more. ">
+    <meta name="description"
+        content="I design and build software for tech companies. Along the way I've worked with startups in B2B fintech, B2C foodtech, tourism, health, flower delivery subscriptions and more. ">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1BLZ6ZCHRC"></script>
@@ -230,7 +231,8 @@
                             <div class="slide-text">Design sprint ideation</div>
                         </div>
                         <div class="mySlides">
-                            <img class="img-slides" src="./assets/images/freddies-flowers-testimonial-illy-dimitrova.webp"
+                            <img class="img-slides"
+                                src="./assets/images/freddies-flowers-testimonial-illy-dimitrova.webp"
                                 alt="Freddie's Flowers testimonial">
                             <div class="slide-text">Freddie's Flowers testimonial</div>
                         </div>
@@ -241,7 +243,8 @@
                             <div class="slide-text">User testing</div>
                         </div>
                         <div class="mySlides">
-                            <img class="img-slides" src="./assets/images/freddies-design-sprint-team-illy-dimitrova.webp"
+                            <img class="img-slides"
+                                src="./assets/images/freddies-design-sprint-team-illy-dimitrova.webp"
                                 alt="Prototype presentations">
                             <div class="slide-text">Prototype presentations</div>
                         </div>
@@ -254,13 +257,15 @@
 
                         <!-- Thumbnail images -->
                         <div class="thumbnail-container">
-                            <img class="thumbnail" src="./assets/images/freddies-flowers-design-team-illy-dimitrova.webp"
+                            <img class="thumbnail"
+                                src="./assets/images/freddies-flowers-design-team-illy-dimitrova.webp"
                                 onclick="currentSlide('myModalFreddie', 1)" alt="Freddie's Flowers Design Sprint team">
                             <img class="thumbnail" src="./assets/images/freddies-flowers-figma-illy-dimitrova.webp"
                                 onclick="currentSlide('myModalFreddie', 2)" alt="Freddie's Flowers Figma prototypes">
                             <img class="thumbnail" src="./assets/images/design-sprint-ideation-illy-dimitrova.webp"
                                 onclick="currentSlide('myModalFreddie', 3)" alt="Design sprint ideation">
-                            <img class="thumbnail" src="./assets/images/freddies-flowers-testimonial-illy-dimitrova.webp"
+                            <img class="thumbnail"
+                                src="./assets/images/freddies-flowers-testimonial-illy-dimitrova.webp"
                                 onclick="currentSlide('myModalFreddie', 4)" alt="Freddie's Flowers testimonial">
                             <img class="thumbnail"
                                 src="./assets/images/freddies-flowers-user-testing-illy-dimitrova.webp"
@@ -703,121 +708,7 @@
         </div>
     </footer>
 
-
-    <!-- JavaScript Files -->
-
-    <script>
-
-        // Object to keep track of slide indices for each modal
-        var modalSlideIndexes = {};
-
-
-        // Open the modal
-        function openModal(modalId) {
-            var modal = document.getElementById(modalId);
-            modal.style.display = "flex";
-            if (!modalSlideIndexes[modalId]) {
-                modalSlideIndexes[modalId] = 1;
-            }
-            showSlides(modalId, modalSlideIndexes[modalId]); // Show the first slide or the current slide
-        }
-
-        // Close the modal
-        function closeModal(modalId) {
-            var modal = document.getElementById(modalId);
-            modal.classList.add('ease-out'); // Add the fade-out animation class
-
-            setTimeout(function () {
-                modal.style.display = "none";
-                modal.classList.remove('ease-out'); // Remove the class to reset the animation
-            }, 200); // Match the timeout with the animation duration
-        }
-
-        // Navigate to the previous or next slide
-        function plusSlides(modalId, n) {
-            var slides = document.getElementById(modalId).getElementsByClassName("mySlides");
-            var totalSlides = slides.length;
-            var currentSlideIndex = modalSlideIndexes[modalId];
-            var newIndex = currentSlideIndex + n;
-
-            // Cycle through slides
-            if (newIndex > totalSlides) {
-                newIndex = 1;
-            } else if (newIndex < 1) {
-                newIndex = totalSlides;
-            }
-
-            modalSlideIndexes[modalId] = newIndex;
-            showSlides(modalId, newIndex);
-        }
-
-        // Show the current slide in a modal
-        function currentSlide(modalId, n) {
-            modalSlideIndexes[modalId] = n; // Update the index
-            showSlides(modalId, n);
-        }
-
-
-        // Show slides with a fade transition effect
-        function showSlides(modalId, n) {
-            var i;
-            var modal = document.getElementById(modalId);
-            var slides = modal.getElementsByClassName("mySlides");
-            var thumbnails = modal.getElementsByClassName("thumbnail");
-
-            if (n > slides.length) n = 1;
-            if (n < 1) n = slides.length;
-
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < thumbnails.length; i++) {
-                thumbnails[i].className = thumbnails[i].className.replace(" active", "");
-                thumbnails[i].style.opacity = "0.6"; // Dim all thumbnails
-            }
-            slides[n - 1].style.display = "block";
-            slides[n - 1].style.animation = "fadeEffect 1s"; 
-            thumbnails[n - 1].className += " active";
-            thumbnails[n - 1].style.opacity = "1"; // Highlight the active thumbnail
-        }
-
-        document.addEventListener('keydown', function (event) {
-            var openModal = document.querySelector('.modal[style*="flex"]');
-            if (openModal) {
-                var modalId = openModal.id;
-                if (event.key === "Escape") {
-                    closeModal(modalId);
-                } else if (event.key === "ArrowLeft") {
-                    plusSlides(modalId, -1);
-                } else if (event.key === "ArrowRight") {
-                    plusSlides(modalId, 1);
-                }
-            }
-        });
-
-        function copyEmail() {
-            var tempInput = document.createElement("input");
-            var email = document.querySelector('.icon-wrapper .link').textContent.trim();
-            document.body.appendChild(tempInput);
-            tempInput.value = email;
-            tempInput.select();
-            document.execCommand("copy");
-            document.body.removeChild(tempInput);
-
-            var tooltip = document.querySelector('.icon-wrapper .link .copy-tooltip');
-            tooltip.innerHTML = 'Copied!';
-
-            setTimeout(function () {
-                tooltip.innerHTML = '<img src="./assets/icons/copy-to-clipboard.svg" alt="Copy Icon" class="copy-icon">Copy';
-            }, 2000);
-        }
-
-    </script>
-
-    <script>
-        const currentYear = new Date().getFullYear();
-        document.getElementById('copyright').textContent = `© ${currentYear} illydesign | Handmade in HTML, CSS & Vanilla JS`;
-    </script>
+    <script src="./main.js"></script>
 
 </body>
 
