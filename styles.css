@@ -13,7 +13,6 @@ body {
     line-height: 26px;
     margin: 16px 0px;
     font-weight: 500;
-
 }
 
 .body-bold {
@@ -24,6 +23,14 @@ body {
     margin: 16px 0px;
     color: #333333;
     font-weight: 700;
+}
+
+.body-italic {
+    font-family: 'Roboto Mono', monospace;
+    color: #333333;
+    margin: 16px 0px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 .image-caption {
@@ -52,6 +59,13 @@ body {
     line-height: 66px;
     font-weight: 700;
     margin: 0;
+}
+
+.h1-rich-text {
+    color: #333333;
+    font-weight: 700;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .h2 {
@@ -90,11 +104,7 @@ body {
 
 .paragraph-bold {
     color: #333333;
-    font-size: 20px;
-    line-height: 28px;
-    margin: 16px 0px;
     font-weight: 700;
-
 }
 
 .nav-logo {
@@ -315,6 +325,13 @@ ol {
         line-height: 36px;
     }
 
+    .h1-rich-text {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 52px;
+        margin-bottom: 32px;
+    }
+
     .paragraph,
     .button,
     .link,
@@ -322,7 +339,18 @@ ol {
         font-size: 20px;
     }
 
+    .paragraph-bold {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 32px 0px 0px 0px;
+    }
+
     .body {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .body-italic {
         font-size: 17px;
         line-height: 26px;
     }
@@ -547,9 +575,27 @@ ol {
         line-height: 36px;
     }
 
+    .h1-rich-text {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 52px;
+        margin-bottom: 32px;
+    }
+
     .body {
         font-size: 17px;
         line-height: 26px;
+    }
+
+    .body-italic {
+        font-size: 17px;
+        line-height: 26px;
+    }
+
+    .paragraph-bold {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 32px 0px 0px 0px;
     }
 
     li {
@@ -687,6 +733,14 @@ ol {
         margin: 0;
     }
 
+
+    .h1-rich-text {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 52px;
+        margin-bottom: 32px;
+    }
+
     .h2 {
         font-size: 24px;
         line-height: 32px;
@@ -704,6 +758,11 @@ ol {
         font-size: 17px;
         line-height: 26px;
 
+    }
+
+    .body-italic {
+        font-size: 17px;
+        line-height: 26px;
     }
 
     li {
@@ -726,6 +785,12 @@ ol {
     .link,
     .project-link {
         font-size: 18px;
+    }
+
+    .paragraph-bold {
+        font-size: 18px;
+        line-height: 26px;
+        margin: 24px 0px 0px 0px;
     }
 
     .rich-text-link {
@@ -917,6 +982,14 @@ ol {
     }
 
 
+    .h1-rich-text {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 52px;
+        margin-bottom: 32px;
+    }
+
+
     .h3 {
         font-size: 28px;
         line-height: 36px;
@@ -1061,6 +1134,13 @@ ol {
         margin: 0;
     }
 
+    .h1-rich-text {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 48px;
+        margin-bottom: 24px;
+    }
+
     .h2 {
         font-size: 24px;
         line-height: 32px;
@@ -1086,6 +1166,11 @@ ol {
     }
 
     .body-bold {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .body-italic {
         font-size: 16px;
         line-height: 24px;
     }
