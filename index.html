@@ -118,12 +118,10 @@
                                 class="illy-logo">
 
                         </div>
-                        <p class="paragraph"> I'm a product designer based in London, UK. I design and build exceptional
-                            products for users and
-                            businesses.
+                        <p class="paragraph"> I'm a product designer and a front-end developer based in London, UK. I design and build exceptional products for users and businesses.
                         </p>
-                        <p class="paragraph">I've been working with SaaS companies since 2018. Along the way,
-                            I've designed for startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
+                        <p class="paragraph">My work with SaaS companies dates back to 2018, first starting in marketing and communications. Along the way,
+                            I've designed for UK and US startups in B2B fintech, B2C foodtech, tourism, health, flower delivery
                             subscriptions and more.</p>
 
                         <p class="paragraph">Get in touch if you'd like to discuss a project.</p>
@@ -140,7 +138,45 @@
             <hr class="hr">
             <div class="work-project-wrapper">
                 <h1 class="h1">Recent Work</h1>
-                <h2 class="h2">Fintech Startup Krokit - Design </h2>
+                <h2 class="h2">ChatSim - AI Chat Simulator</h2>
+
+                <div class="image-grid-one">
+                    <img src="./assets/images/chatsim.ai.webp" alt="chatsim-ai-hero"
+                        onclick="openModal('myModalChatSim');currentSlide('myModalChatSim', 1)"
+                        class="hover-shadow cursor">
+                </div>
+
+                <div id="myModalChatSim" class="modal">
+                    <span class="close cursor" onclick="closeModal('myModalChatSim')"><img class="functional-icon"
+                            src="./assets/icons/close-icon.svg"></span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <img class="img-slides" src="./assets/images/chatsim.ai.webp"
+                                alt="chatsim-ai-hero">
+                            <div class="slide-text">ChatSim.ai</div>
+                        </div>
+
+                        <!-- Thumbnail images -->
+                        <div class="thumbnail-container">
+                            <img class="thumbnail" src="./assets/images/chatsim.ai.webp"
+                                onclick="currentSlide('myModalChatSim', 1)" alt="chatsim-ai-hero">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="narrow-text-container">
+                    <p class="paragraph">I am designing and building ChatSim, a tool that simulates professional conversations with realistic AI characters and scenarios. After the chat, the user gets personalised feedback for improvement and a score out of a hundred. The goal is to help teams practice work situations (Sales, HR, Customer Service etc.), learn new skills in a fun way and level up. Managers can track impact and measure team performance. </p>
+                </div>
+                <div class="flex-link-wrapper">
+                    <span class="icon-style">🔗</span>
+                    <a href="https://chatsim.ai" target="_blank" class="project-link">Visit ChatSim.ai</a>
+                </div>
+            </div>
+
+            <hr class="hr">
+            <div class="work-project-wrapper">
+                <h2 class="h2">Fintech Startup Krokit - Design</h2>
 
                 <div class="image-grid-one">
                     <img src="./assets/images/work/krokit/hero-image-krokit.webp" alt="krokit-hero"
@@ -156,30 +192,28 @@
                         <div class="mySlides">
                             <img class="img-slides" src="./assets/images/work/krokit/hero-image-krokit.webp"
                                 alt="hero-image-krokit">
-                            <div class="slide-text">Krokit </div>
+                            <div class="slide-text">Krokit</div>
                         </div>
 
                         <!-- Thumbnail images -->
                         <div class="thumbnail-container">
                             <img class="thumbnail" src="./assets/images/work/krokit/hero-image-krokit.webp"
                                 onclick="currentSlide('myModalKrokit', 1)" alt="hero-image-krokit">
-
                         </div>
                     </div>
                 </div>
 
                 <div class="narrow-text-container">
-                    <p class="paragraph"> Krokit (HQ in the US) is the financial data management platform for the
-                        franchise industry. I
-                        came in as a first designer, built two products and helped scale one of them to a five-figure
-                        monthly revenue in just two months.
-                    </p>
+                    <p class="paragraph">Krokit (HQ in the US) is the financial data management platform for the
+                        franchise industry. I came in as a first designer, built two products and helped scale one of them to a five-figure
+                        monthly revenue in just two months.</p>
                 </div>
                 <div class="flex-link-wrapper">
                     <span class="icon-style">📖</span>
                     <a href="/work/krokit" class="project-link">Read case study</a>
                 </div>
             </div>
+
             <hr class="hr">
             <div class="work-project-wrapper">
                 <h2 class="h2">Design Sprints for Freddie's Flowers</h2>
@@ -278,16 +312,16 @@
                 </div>
 
                 <div class="narrow-text-container">
-                    <p class="paragraph"> I was part of two 5-day design sprints in 2022 and 2023 in London organised by
+                    <p class="paragraph"> I was part of two 5-day design sprints in London organised by
                         <a class="project-link" href="https://www.thecraftory.io/" target="_blank">The Craftory VC
                             Fund</a> for Freddie's Flowers. During the first sprint I worked closely with Freddie's and
                         The Craftory VC teams on
                         designing dynamic
-                        prototypes for Freddie's new
-                        'Gifting' product which was released in Feb 2023. In the second sprint I collaborated with
+                        prototypes for a new
+                        'Gifting' product. We tested the prototypes with real users and the product was released shortly after the sprints. In the second sprint I collaborated with
                         Freddie's
                         branding and executive teams to generate dynamic prototypes for six product
-                        dimensions. All designs were tested with real
+                        dimensions. All designs were again tested with real
                         users from various audience segments to establish the most viable solution.
                     </p>
                 </div>
@@ -562,52 +596,6 @@
                 <div class="flex-link-wrapper">
                     <span class="icon-style">👀</span>
                     <a target="_blank" href="https://fft.webflow.io/" class="project-link">Webflow link</a>
-                </div>
-            </div>
-
-            <hr class="hr">
-            <div class="work-project-wrapper">
-                <h2 class="h2">Food App Landing Page</h2>
-
-                <div class="image-grid-one">
-                    <img src="./assets/images/yelow-dribbble.webp" alt="Food app"
-                        onclick="openModal('myModalFoodApp');currentSlide('myModalFoodApp', 1)"
-                        class="hover-shadow cursor">
-
-                </div>
-
-                <div id="myModalFoodApp" class="modal">
-                    <span class="close cursor" onclick="closeModal('myModalFoodApp')"><img class="functional-icon"
-                            src="./assets/icons/close-icon.svg"></span>
-                    <div class="modal-content">
-                        <div class="mySlides">
-                            <img class="img-slides" src="./assets/images/yelow-dribbble.webp" alt="Food app">
-                        </div>
-
-
-                        <a class="prev" onclick="plusSlides('myModalFoodApp', -1)"><img class="functional-icon"
-                                src="./assets/icons/chevron-left.svg" /></a>
-                        <a class="next" onclick="plusSlides('myModalFoodApp', 1)"><img class="functional-icon"
-                                src="./assets/icons/chevron-right.svg" /></a>
-
-                        <!-- Thumbnail images -->
-                        <div class="thumbnail-container">
-                            <img class="thumbnail" src="./assets/images/yelow-dribbble.webp"
-                                onclick="currentSlide('myModalFoodApp', 1)" alt="Food app">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="narrow-text-container">
-                    <p class="paragraph">Landing page design for a food app
-                        concept helping customers find the best meal
-                        for them based on their dietary requirements.</p>
-                </div>
-                <div class="flex-link-wrapper">
-                    <span class="icon-style">💻</span>
-                    <a target="_blank"
-                        href="https://www.figma.com/proto/znRd5rFC6CFJwzUX9955kQ/yelow-landing-page?node-id=1471-1098&scaling=min-zoom&page-id=1402%3A1041&starting-point-node-id=1471%3A1098"
-                        class="project-link">Figma</a>
                 </div>
             </div>
 
